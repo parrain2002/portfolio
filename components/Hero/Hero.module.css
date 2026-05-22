@@ -1,0 +1,106 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+  gap: var(--space-2xl);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  max-width: 600px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  border-radius: var(--radius-pill);
+  border: 1px solid #22C55E;
+  color: #22C55E;
+  font-size: 13px;
+  width: fit-content;
+}
+
+.title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.accent { color: var(--color-primary); }
+
+.subtitle {
+  font-size: 18px;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+.actions {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.btnPrimary {
+  padding: 14px 32px;
+  background: var(--color-primary);
+  color: white;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 15px;
+  transition: opacity 0.2s;
+}
+.btnPrimary:hover { opacity: 0.85; }
+
+.btnGhost {
+  padding: 14px 32px;
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  font-size: 15px;
+  transition: border-color 0.2s;
+}
+.btnGhost:hover { border-color: var(--color-text-muted); }
+
+.techs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.techBadge {
+  padding: 6px 14px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+/* La carte code à droite */
+.visual {
+  flex-shrink: 0;
+}
+
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 32px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 15px;
+  min-width: 320px;
+}
+
+.cardLine { color: var(--color-text); }
+.keyword { color: #7DD3FC; }
+.string { color: #86EFAC; }

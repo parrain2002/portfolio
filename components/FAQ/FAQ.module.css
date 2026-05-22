@@ -1,0 +1,41 @@
+.section {
+  background: var(--color-bg);
+}
+
+.title {
+  font-size: 2rem;
+  color: var(--color-text);
+}
+
+.accordionItem {
+  background: var(--color-surface) !important;
+  border: 1px solid var(--color-border) !important;
+  border-radius: var(--radius-md) !important;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.accordionBtn {
+  background: var(--color-surface) !important;
+  color: var(--color-text) !important;
+  font-size: 0.95rem;
+  font-weight: 500;
+  box-shadow: none !important;
+  padding: 1.2rem 1.5rem;
+}
+
+.accordionBtn::after {
+  filter: invert(1); /* flèche blanche */
+}
+
+.accordionBtn:not(.collapsed) {
+  color: var(--color-primary) !important;
+}
+
+.accordionBody {
+  background: var(--color-surface);
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  padding: 0 1.5rem 1.2rem;
+}

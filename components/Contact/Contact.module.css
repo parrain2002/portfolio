@@ -1,0 +1,65 @@
+.section {
+  padding: 100px 0 0;
+}
+
+.title {
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.subtitle {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+.emailBtn {
+  padding: 0.9rem 2rem;
+  background: var(--color-primary);
+  color: white;
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+.emailBtn:hover { opacity: 0.85; color: white; }
+
+.copyBtn {
+  padding: 0.9rem 2rem;
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: border-color 0.2s;
+}
+.copyBtn:hover {
+  border-color: var(--color-text-muted);
+  color: var(--color-text);
+}
+
+.social {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  transition: color 0.2s;
+}
+.social:hover { color: var(--color-text); }
+
+.dot { color: var(--color-border); }
+
+.footer {
+  border-top: 1px solid var(--color-border);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.footerText {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.toast {
+  background: var(--color-surface);
+  color: var(--color-text);
+  border: 1px solid var(--color-border) !important;
+  min-width: 280px;
+}
